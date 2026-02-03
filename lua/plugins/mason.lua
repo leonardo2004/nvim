@@ -44,18 +44,20 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		config = function()
 			---@diagnostic disable-next-line: lowercase-global
-			ensure_installed = {
-				--LSPs
-				"lua_ls",
-				"pylsp",
-				"verible",
-				"clangd",
-				--Formatter
-				"stylua",
-				"black",
-				--Debugger
-				"codelldb",
-			}
+			require("mason-tool-installer").setup({
+				ensure_installed = {
+					--LSPs
+					"lua_ls",
+					"pylsp",
+					"verible",
+					"clangd",
+					--Formatter
+					"stylua",
+					"black",
+					--Debugger
+					"codelldb",
+				},
+			})
 		end,
 	},
 }
