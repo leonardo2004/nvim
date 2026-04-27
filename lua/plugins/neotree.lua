@@ -17,7 +17,8 @@ return {
             require("neo-tree.command").execute({ action = "close" })
           end
         },
-      }
+      },
+
     })
   end,
 }

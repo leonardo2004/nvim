@@ -37,5 +37,7 @@ vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 vim.g.have_nerd_font = true
 vim.opt.clipboard = "unnamedplus"
 
+
+
 --Lsp
 require("lsp")
